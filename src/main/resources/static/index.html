@@ -3,11 +3,33 @@
 <title>BookVerse Backend</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#09090f,#0f172a,#312e81);overflow:hidden}
-body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(80px);opacity:.45}
+	body{
+	    font-family:Poppins,sans-serif;
+	    min-height:100vh;
+	    background:linear-gradient(135deg,#09090f,#0f172a,#312e81);
+	    display:flex;
+	    justify-content:center;
+	    align-items:flex-start;
+	    overflow-x:hidden;
+	    overflow-y:auto;
+	    padding:40px 15px;
+	}
+	body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(80px);opacity:.45}
 body:before{width:320px;height:320px;background:#2563eb;left:-80px;top:-80px}
 body:after{width:360px;height:360px;background:#8b5cf6;right:-80px;bottom:-80px}
-.card{width:min(950px,92%);padding:45px;border-radius:24px;background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);box-shadow:0 20px 50px rgba(0,0,0,.45);color:#fff;text-align:center}
+.card{
+    width:100%;
+    max-width:950px;
+    padding:40px;
+    border-radius:24px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+    color:#fff;
+    text-align:center;
+    margin:20px auto;
+}
 h1{font-size:58px;background:linear-gradient(90deg,#60a5fa,#c084fc);-webkit-background-clip:text;color:transparent}
 p{color:#d1d5db}.badge{display:inline-block;margin:20px 0;padding:10px 22px;border-radius:999px;background:#16a34a;font-weight:700;animation:pulse 1.8s infinite}
 @keyframes pulse{50%{transform:scale(1.05);box-shadow:0 0 25px #16a34a}}
@@ -16,11 +38,54 @@ p{color:#d1d5db}.badge{display:inline-block;margin:20px 0;padding:10px 22px;bord
 .box:hover{transform:translateY(-8px);background:rgba(255,255,255,.12)}
 .box h3{margin-bottom:8px}
 ul{text-align:left;list-style:none;line-height:2}
-.btns{margin-top:20px}
+.btns{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
 a{display:inline-block;text-decoration:none;color:#fff;padding:14px 24px;margin:8px;border-radius:12px;font-weight:600}
 .git{background:#2563eb}.doc{background:#7c3aed}
 footer{margin-top:35px;color:#cbd5e1}
 small{display:block;margin-top:8px}
+
+@media (max-width:768px){
+
+    body{
+        padding:20px 10px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .badge{
+        width:100%;
+        border-radius:12px;
+    }
+
+    .btns{
+        flex-direction:column;
+    }
+
+    a{
+        width:100%;
+        margin:5px 0;
+    }
+
+    ul{
+        font-size:15px;
+    }
+}
 </style></head>
 <body>
 <div class="card">
