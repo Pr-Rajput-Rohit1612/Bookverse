@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BookVerse Backend</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#09090f,#0f172a,#312e81);overflow:hidden}
+body:before,body:after{content:"";position:fixed;border-radius:50%;filter:blur(80px);opacity:.45}
+body:before{width:320px;height:320px;background:#2563eb;left:-80px;top:-80px}
+body:after{width:360px;height:360px;background:#8b5cf6;right:-80px;bottom:-80px}
+.card{width:min(950px,92%);padding:45px;border-radius:24px;background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);box-shadow:0 20px 50px rgba(0,0,0,.45);color:#fff;text-align:center}
+h1{font-size:58px;background:linear-gradient(90deg,#60a5fa,#c084fc);-webkit-background-clip:text;color:transparent}
+p{color:#d1d5db}.badge{display:inline-block;margin:20px 0;padding:10px 22px;border-radius:999px;background:#16a34a;font-weight:700;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.05);box-shadow:0 0 25px #16a34a}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;margin:35px 0}
+.box{padding:22px;border-radius:18px;background:rgba(255,255,255,.07);transition:.3s}
+.box:hover{transform:translateY(-8px);background:rgba(255,255,255,.12)}
+.box h3{margin-bottom:8px}
+ul{text-align:left;list-style:none;line-height:2}
+.btns{margin-top:20px}
+a{display:inline-block;text-decoration:none;color:#fff;padding:14px 24px;margin:8px;border-radius:12px;font-weight:600}
+.git{background:#2563eb}.doc{background:#7c3aed}
+footer{margin-top:35px;color:#cbd5e1}
+small{display:block;margin-top:8px}
+</style></head>
+<body>
+<div class="card">
+<h1>📚 BookVerse</h1>
+<p>Modern Digital Library Backend</p>
+<div class="badge">🟢 Backend Running Successfully</div>
+<div class="grid">
+<div class="box"><h3>⚙ Spring Boot</h3><p>REST API</p></div>
+<div class="box"><h3>🗄 MySQL</h3><p>Aiven Cloud</p></div>
+<div class="box"><h3>☁ Render</h3><p>Cloud Hosted</p></div>
+<div class="box"><h3>🚀 Status</h3><p>Production Ready</p></div>
+</div>
+<div class="box">
+<h3>Available APIs</h3>
+<ul>
+<li>📖 GET /books</li>
+<li>🔍 GET /books/search</li>
+<li>⭐ GET /books/favourite</li>
+<li>📂 GET /books/category/{category}</li>
+<li>📊 GET /books/stats</li>
+<li>➕ POST /books</li>
+<li>✏ PUT /books/{id}</li>
+<li>❌ DELETE /books/{id}</li>
+</ul>
+</div>
+<div class="btns">
+<a class="git" href="https://github.com/Pr-Rajput-Rohit1612/Bookverse" target="_blank">🐙 GitHub</a>
+<a class="doc" href="/swagger-ui/index.html">📘 API Docs</a>
+</div>
+<footer>
+<h3>Welcome Developer 👋</h3>
+<p>This is the backend service for BookVerse. Use Postman or Swagger UI to test the REST APIs.</p>
+<small>Built with ❤️ by Rohit Rajput • Spring Boot • Hibernate • JPA • MySQL</small>
+</footer>
+</div>
+</body></html>
