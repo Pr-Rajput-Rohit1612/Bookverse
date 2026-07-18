@@ -143,55 +143,7 @@ Run
 ```bash
 ./mvnw spring-boot:run
 ```
----
 
-# 🎨 BookVerse Frontend
-
-BookVerse Frontend is a modern user interface developed using **React and Vite**.
-
-It connects with the BookVerse Backend APIs and allows users to view and manage their personal book collection.
-
-> 🚧 The frontend is currently under development.
-
----
-
-# ✨ Frontend Features
-
-- 📚 Books Listing
-- 🔍 Search and Filtering
-- 📄 Pagination
-- ⭐ Favourite Books
-- 📊 Reading Dashboard
-- 📂 Category Management
-- 📖 Reading Progress
-- 🎨 Responsive User Interface
-- ➕ Add Book
-- ✏️ Edit Book
-- 🗑 Delete Book
-
----
-
-# 🛠 Frontend Tech Stack
-
-| Technology | Used |
-|------------|------|
-| React | ✔ |
-| Vite | ✔ |
-| Tailwind CSS | ✔ |
-| Axios | ✔ |
-| React Router | ✔ |
-| Framer Motion | ✔ |
-| Recharts | ✔ |
-| Lucide React | ✔ |
-
----
-
-# 💻 Run Frontend Locally
-
-Move into the frontend folder:
-
-```bash
-cd Bookverse/BookVerse_frontend
 ---
 
 # 🔮 Future Improvements
